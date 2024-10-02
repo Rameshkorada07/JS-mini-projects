@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login-form.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css"> 
+</head>
+<body>
+   <div class="container">
+         <div class="login-box">
+            <div class="buttons">
+                <button id="login-btn" onclick="changeLogin()">Login</button>
+                <button id="register-btn" onclick="changeRegister()">Register</button>
+            </div>
+            <div class="icons">
+                <img src="images/facebook-f-brands-solid.svg">
+                <img src="images/instagram-brands-solid.svg">
+                <img src="images/twitter-brands-solid.svg">
+            </div>
+            <div class="login-regis">
+                <div id="login" class="input-field">
+                    <input type="text" placeholder="User Id" required>
+                    <input type="text" placeholder="Enter Password" required>
+                        <input type="checkbox" class="checkbox">
+                        <p>Remember password</p>
+                    <button>Login</button>
+                </div>
+                
+
+
+                <div  id="register" class="input-field">
+                    <input type="text" placeholder="User Id" required>
+                    <input type="email" placeholder="Email Id" required>
+                    <input type="text" placeholder="Enter Password" required>
+                        <input type="checkbox" class="checkbox" id="checkbox2">
+                        <p>i agree with all terms & conditions</p>
+                    <button>Register</button>
+                </div>
+                
+            </div>
+            
+
+
+            
+         </div>
+   </div> 
+
+
+   <script src="login-form.js"></script>
+</body>
+</html>

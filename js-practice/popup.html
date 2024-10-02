@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+         <button onclick="createpopup()">POPUP</button>
+         <div class="popup" id="popup">
+            <h4>Thank You</h4>
+            <p>Your details has been successfully<br> submited. Thanks</p>
+            <button onclick="hide()">OK</button>
+         </div>
+    </div>
+
+
+    <script>
+        let popup = document.getElementById("popup");
+        function createpopup() {
+           popup.style.marginTop = "100px";
+        }
+
+        function hide() {
+            popup.style.marginTop = "-1000px";
+        }
+    </script>
+</body>
+</html>
